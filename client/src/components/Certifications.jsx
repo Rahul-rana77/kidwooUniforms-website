@@ -15,7 +15,7 @@ function Certifications() {
   ]
 
   return (
-    <section className="schools section" id="certification">
+    <section className="schools section" id="certifications">
       <div className="container">
         <h2 className="section-title">Certifications</h2>
 
@@ -26,15 +26,15 @@ function Certifications() {
 
         <Swiper
           modules={[Navigation, Autoplay]}
-          spaceBetween={50}
+          spaceBetween={30}
           slidesPerView={1}
+          navigation
           autoplay={{delay:2500}}
           breakpoints={{
             320: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          navigation
           className="schools-partners"
         >
           {certificates.map((cert, index) => (
