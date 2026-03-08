@@ -4,7 +4,7 @@ function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h3>UniForm Pro</h3>
+            <h3>Kidwoo Uniforms</h3>
             <p>
               Premium school uniform manufacturing for institutions and
               individuals. Quality you can trust, styles students love.
@@ -123,7 +123,7 @@ function Footer() {
           <p>
             {'© '}
             {new Date().getFullYear()}
-            {' UniForm Pro. All rights reserved.'}
+            {' Kidwoo Uniforms. All rights reserved.'}
           </p>
         </div>
       </div>

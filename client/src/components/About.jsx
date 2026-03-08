@@ -12,10 +12,9 @@ function About() {
             />
           </div>
           <div className="about-text">
-            <h2>About UniForm Pro</h2>
+            <h2>About Kidwoo Uniforms</h2>
             <p>
-              With over 20 years of experience in the textile industry, UniForm
-              Pro has established itself as a trusted name in school uniform
+              With over 20 years of experience in the textile industry,Kidwoo Uniforms has established itself as a trusted name in school uniform
               manufacturing. We combine traditional craftsmanship with modern
               technology to deliver uniforms that meet the highest standards of
               quality and comfort.
