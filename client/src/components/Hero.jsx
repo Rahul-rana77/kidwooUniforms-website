@@ -11,7 +11,7 @@ function Hero() {
       </div>
       <div className="hero-overlay" />
       <div className="container hero-content">
-        <h1>Quality School Uniforms for Every Institution</h1>
+        <h1>Quality Uniforms for Every School and Institution</h1>
         <p>
           Crafted with care for durability and comfort. We partner with schools
           across the nation to deliver premium uniforms that students love to

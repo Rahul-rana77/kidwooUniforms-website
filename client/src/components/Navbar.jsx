@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from "../assets/logo2.jpeg"
+import logo from "../assets/logo_navbar.png"
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -8,7 +8,7 @@ function Navbar() {
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
-    { label: 'Schools', href: '#schools' },
+    { label: 'Certifications', href: '#certifications' },
     { label: 'Process', href: '#process' },
     { label: 'Contact', href: '#contact' },
   ]

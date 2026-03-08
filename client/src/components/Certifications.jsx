@@ -1,32 +1,62 @@
-function Schools() {
-  const partners = [
-    'Greenfield Academy',
-    'Riverside High',
-    "St. Mary's School",
-    'Oakwood College',
-    'Hillcrest Prep',
-    'Central Grammar',
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
+import "swiper/css/navigation"
+
+import { Navigation, Autoplay } from "swiper/modules"
+import cert1 from '../assets/certifications.jpeg'
+import cert2 from '../assets/certification2.jpeg'
+import cert3 from '../assets/certification3.jpeg'
+
+function Certifications() {
+  const certificates = [
+    cert1,
+    cert2,
+    cert3
   ]
 
   return (
-    <section className="schools section" id="schools">
+    <section className="schools section" id="certification">
       <div className="container">
-        <h2 className="section-title">Our School Partners</h2>
+        <h2 className="section-title">Certifications</h2>
+
         <p className="section-subtitle">
-          Trusted by leading educational institutions across the country for
-          reliable, high-quality uniform supply.
+          Our commitment to quality and reliability is backed by trusted
+          certifications and industry recognition.
         </p>
 
-        <div className="schools-partners">
-          {partners.map((school) => (
-            <div className="partner-logo" key={school}>
-              {school}
-            </div>
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={{delay:2500}}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          navigation
+          className="schools-partners"
+        >
+          {certificates.map((cert, index) => (
+            <SwiperSlide key={index}>
+              <div className="partner-logo">
+                <img
+                  src={cert}
+                  alt="certificate"
+                  style={{ 
+                    width:"60%",
+                    height:"auto",
+
+                  }}
+                />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
         <div className="schools-info">
           <h3>Why Schools Choose Us</h3>
+
           <div className="schools-benefits">
             <div className="benefit-item">
               <svg
@@ -38,7 +68,6 @@ function Schools() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 viewBox="0 0 24 24"
-                aria-hidden="true"
               >
                 <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
                 <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
@@ -47,6 +76,7 @@ function Schools() {
               </svg>
               <p>Dedicated Account Manager</p>
             </div>
+
             <div className="benefit-item">
               <svg
                 width="28"
@@ -57,13 +87,13 @@ function Schools() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 viewBox="0 0 24 24"
-                aria-hidden="true"
               >
                 <line x1="12" y1="1" x2="12" y2="23" />
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
               <p>Competitive Bulk Pricing</p>
             </div>
+
             <div className="benefit-item">
               <svg
                 width="28"
@@ -74,7 +104,6 @@ function Schools() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 viewBox="0 0 24 24"
-                aria-hidden="true"
               >
                 <circle cx="12" cy="12" r="10" />
                 <polyline points="12 6 12 12 16 14" />
@@ -94,4 +123,4 @@ function Schools() {
   )
 }
 
-export default Schools
+export default Certifications
