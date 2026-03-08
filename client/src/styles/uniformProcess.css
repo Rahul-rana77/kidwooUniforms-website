@@ -1,0 +1,48 @@
+.media-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+/* Video - horizontal */
+.video-style {
+  height: 70vh;
+  width: 30vw;
+  border-radius: 8px;
+  margin-bottom: 2vh;
+  object-fit: cover;
+}
+
+/* Image centered */
+.image-style {
+  height: 55vh;
+  width: auto;
+  display: block;
+  margin: 0 auto 2vh auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .video-style {
+    height: 25vh;
+  }
+
+  .image-style {
+    height: 30vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .video-style {
+    height: 22vh;
+  }
+
+  .image-style {
+    height: 25vh;
+  }
+}
