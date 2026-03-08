@@ -18,8 +18,8 @@ function Hero() {
           wear and parents trust.
         </p>
         <div className="hero-buttons">
-          <a href="#schools" className="btn btn-accent">
-            Partner with Us
+          <a href="#contact" className="btn btn-accent">
+            Contact Us
           </a>
           <a href="#process" className="btn btn-outline">
             How We Make
