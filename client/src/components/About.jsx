@@ -80,7 +80,7 @@ function About() {
                     <polyline points="22 4 12 14.01 9 11.01" />
                   </svg>
                 </div>
-                <span>Quality uniforms made with Saparsh Feb & Valji Feb fabrics.</span>
+                <span>Quality uniforms made with Saparsh Febrics & Valji Febrics.</span>
               </div>
               <div className="about-value-item">
                 <div className="about-value-icon">

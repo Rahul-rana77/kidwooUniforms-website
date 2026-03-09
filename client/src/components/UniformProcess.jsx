@@ -18,12 +18,12 @@ function UniformProcess() {
     {
       type: "video",
       src: pattern,
-      title: "Pattern Printing",
+      title: "Printing Solution",
     },
     {
       type: "video",
       src: febric,
-      title: "Fabric Selection",
+      title: "Pattern Making",
     },
     {
       type: "video",
