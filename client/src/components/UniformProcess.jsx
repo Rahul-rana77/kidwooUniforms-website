@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import pattern from "../assets/pattern.mp4"
 import febric from "../assets/febric2.mp4"
 import cutting from "../assets/cutting.mp4"
 import stitching from "../assets/Stiching.mp4"
@@ -14,6 +15,11 @@ import "../styles/uniformProcess.css"
 
 function UniformProcess() {
   const media = [
+    {
+      type: "video",
+      src: pattern,
+      title: "Pattern Printing",
+    },
     {
       type: "video",
       src: febric,

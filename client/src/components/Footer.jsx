@@ -86,7 +86,7 @@ function Footer() {
             <h4>For Schools</h4>
             <ul>
               <li>
-                <a href="#schools">Partner Program</a>
+                <a href="#certifications">Certifications</a>
               </li>
               <li>
                 <a href="#contact">Request a Quote</a>
